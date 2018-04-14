@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="tests" thread-count="5">
+
+ <parameter name="userName" value="Bala"></parameter>
+ 
+  <test name="Chrome">
+  <parameter name="BrowserName" value="chrome"></parameter>
+ 
+    <classes>
+      <class name="testng.LoginTest"/>
+      
+    </classes>
+  </test>
+  
+  <test name="IE">
+  <parameter name="BrowserName" value="CHROME"></parameter>
+    <classes>
+      <class name="testng.LoginTest"></class>
+    </classes>
+  </test>
+  
+</suite> 

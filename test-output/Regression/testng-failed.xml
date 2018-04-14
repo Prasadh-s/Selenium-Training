@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
+  <parameter name="userName" value="Bala"/>
+  <test name="IE(failed)">
+    <parameter name="BrowserName" value="IE"/>
+    <classes>
+      <class name="testng.LoginTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="validateForgetLink"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="validateLogin"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testng.LoginTest -->
+    </classes>
+  </test> <!-- IE(failed) -->
+</suite> <!-- Failed suite [Regression] -->
